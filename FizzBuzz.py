@@ -16,6 +16,10 @@ def fizzBuzz(x, y, n):
 	
 for line in test_cases:
     nums = [int(x) for x in line.split()]
-    fizzBuzz(*nums)
+    fizzBuzz(*nums) 
+
+## Note 1: * operator
+## * is a shortcut that allows you to pass multiple arguments to a function directly using either a list/tuple or a dictionary. 
+## so fizzBuzz(*[2,7,10]) is equivalent to fizzBuzz(2,7,10)
 	
 test_cases.close()
